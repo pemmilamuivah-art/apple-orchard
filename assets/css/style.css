@@ -1,0 +1,37 @@
+
+/* Simple modern styles for the demo store */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --accent:#d97706;
+  --muted:#6b7280;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#fbfdfe,#f0f4f8);color:#0f1724}
+.container{max-width:1100px;margin:28px auto;padding:0 16px}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:transparent}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:8px;object-fit:cover}
+.muted{color:var(--muted)}
+.site-header nav a{margin-left:12px;color:inherit;text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center;margin-top:12px}
+.hero-image img{width:100%;border-radius:12px;display:block}
+.hero-text h2{margin:0 0 8px}
+.cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+.container-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,36,0.06);margin-top:18px}
+.feature-photo{width:120px;height:120px;object-fit:cover;border-radius:8px;margin-right:12px}
+.flex{display:flex;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:16px}
+.product{background:var(--card);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:8px;align-items:start}
+.product img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.price-row{display:flex;justify-content:space-between;align-items:center;width:100%}
+.price{font-weight:700}
+.btn{background:transparent;border:1px solid rgba(15,23,36,0.06);padding:8px 10px;border-radius:8px;cursor:pointer;text-decoration:none}
+.add-btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+.cart-btn{background:transparent;border:1px solid rgba(15,23,36,0.06);padding:8px 10px;border-radius:8px;cursor:pointer}
+.site-footer{padding:18px 16px;text-align:center;color:var(--muted);margin-top:28px}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+}
